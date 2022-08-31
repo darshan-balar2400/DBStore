@@ -47,7 +47,7 @@
 
 Your Name - Darshan Balar - balardarshan40@gmail.com
 
-Project Link: (https://github.com/darshan-balar2400/madovergrills)
+Project Link: (https://github.com/darshan-balar2400/DBStore)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
