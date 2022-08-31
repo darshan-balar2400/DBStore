@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link href="../css/index.css" rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery file  -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/signup.js"></script>
+    <!-- other files -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title> DB Store</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section .form_container ,.logo_container{
+            width: 50%;
+            height: 100%;
+            /*border: 1px solid black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo_container img{
+            width:30rem;
+            height: 30rem;
+        }
+        @media (max-width: 700px){
+            
+            section .form_container{
+                width: 100%;
+                margin-top: 3rem;
+               
+            }
+            section .logo_container{
+                margin-top: 2rem;
+                /*margin-bottom: 2rem;*/
+            }
+            section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: auto;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header class="container-fluid">
+        <div class="content container ">
+            <div class="brand_image">
+                <img width="30" height="35" src="../images/logo1.jpg">
+            </div>
+            <div class="brand_name">
+                <span style="color:rgb(50,198,113);">DB</span>Store
+            </div>
+            <div class="links">
+                <a href="../index.html" >Home</a>
+                <a href="AllProducts.html">Products</a>
+                <a href="#contactUs">Contact Us</a>
+                <a href="#ourapp">Our App</a>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search"  data-toggle="dropdown" class="dropdown" autocomplete="off" onkeyup="displayDropDown();">
+                
+                <button class="searchBtn" onclick="Search();"><ion-icon name="search"></ion-icon></button>
+                <div class="dropdown-menu" id="dropdownSearch" style="display: none;">
+                    <!-- <div class="dropdown-item">
+                       <a href="#"></a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="likeAndCartButton">
+                <button class="likeBtn"><ion-icon name="heart-outline"></ion-icon></button>
+                <button class="cartBtn"><ion-icon name="cart"></ion-icon></button>
+                <a href="login.html"><button class="loginButton"><ion-icon name="log-in-outline"></ion-icon></button></a>
+            </div>
+
+           <a href="otherPages/login.html"> <button class="loginbtn">Login</button></a>
+             <div class="menu_icon ">
+                <button id="menuButton" onclick="ShowMenu();"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <!-- when website is open in the mobile -->
+        <div class="mobile_navbar" id="mobile_navbar">
+                <div class="navbar">
+                    <!-- login button -->
+                    <button onclick="CloseMenu();"><ion-icon name="close-outline"></ion-icon></button>
+                    <ul>
+                         <li><a href="../index.html">Home</a></li>
+                        <li><a href="AllProducts.html">Products</a></li>
+                        <li><a href="#contactUs" onclick="CloseMenu()">Contact Us</a></li>
+                        <li><a href="#ourapp" onclick="CloseMenu()">Our App</a></li>
+                        <li><a href="AllLatestProducts.html">Latest Products</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <!-- <h5>Follow Us On</h5> -->
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                       
+                    </div>
+                </div>
+        </div>
+    </header>
+<!-- body -->
+    <section>
+
+        <div class="container form_container" id="header_container">
+            <div class="form_content">
+                <div class="form_title">
+                    <h2>SignUp </h2>
+                    <h6 style="color:rgb(58,198,113);">- Start Online Shopping Now </h6>
+                </div>
+                <div class="form_body">
+                    <form autocomplete="off" method="post" id="form1" action="login.html">
+                        <!-- first name and last name -->
+                        <div class="names form-group mb-0" id="names">
+                            
+                            <div class="form-group">
+                                <input type="text" name="fname" id="fname" placeholder="First Name">
+                                <span class="error"></span>
+                            </div>
+                            
+                            <div class="form-group ml-3 ">
+                                <input type="text" name="lname" id="lname" placeholder="Last Name">
+                                <span class="error"></span>
+                            </div>
+                                
+                            
+                        </div>
+                        <!-- email -->
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <span class="error"></span>
+                        </div>
+                        <!-- phno -->
+                        <div class="form-group">
+                            <input type="text" name="phno" id="phno" placeholder="Phone No">
+                            <span class="error"></span>
+                        </div>
+                        <!-- password -->
+                        <div class="form-group d-flex mb-0">
+                            <input type="password" name="psw" id="psw" placeholder="Password">
+                            <span class="eyeicon mt-2" onclick="show('psw',this)"><ion-icon name="eye-outline"></ion-icon></span>
+                        </div>
+                        <span class="error"></span>
+                        <!-- confirm password -->
+                        <div class="form-group d-flex align-items-center mb-0 mt-3">
+                            <input type="password" name="cpsw" id="cpsw" placeholder="Confirm Password">
+                            <span class="eyeicon mt-2" onclick="show('cpsw',this)"><ion-icon name="eye-outline"></ion-icon></span>
+                        </div>
+                        <span class="error"></span>
+                       
+                        <input type="submit" name="submit" id="submitButton" class="buttonReg" value="REGISTER">
+                         <h6 class="text-center mt-4 mb-3">Have You Account ? <a href="login.html" style="color:rgb(58,198,113);">Login</a></h6>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="logo_container">
+            <img src="../images/logo.jpg" alt="logo">
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footer_container">
+            <div class="boxes">
+                <div class="box">
+                    <h5>Menu</h5>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Products</li></a>
+                    <a href="#"><li>Brands</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </div>
+                <div class="box">
+                    <h5>Services</h5>
+                    <a href="#"><li>FulFillMent Services</li></a>
+                    <a href="#"><li>Partner Services</li></a>
+                    <a href="#"><li>Packaging Services</li></a>
+                    <a href="#"><li>Account Management </li></a>
+                    
+                </div>
+                <div class="box">
+                    <h5>Contact Us</h5>
+                    <a href="#"><li>balardarshan40@gmail.com</li></a>
+                    <a href="#"><li>+91 98767 56756</li></a>
+                    <a href="#"><li>+91 59395 24929</li></a>
+                    
+                </div>
+                <div class="box" id="ourapp">
+                    <h5>Our App</h5>
+                    <a href="#"><img src="../images/playStore.png" width="110" height="35"></a><br>
+                    <a href="#"><img src="../images/appleStore.png" class="mt-2"  width="110" height="35"></a>
+                   
+                </div>
+                <div class="box" id="followUsOn">
+                    <h5>Follow Us On</h5>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                   
+                </div>
+            </div>
+            <div class="copyright">
+                <h6>@2022 DBStore All Rights Reserved</h6>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function show(eleId,curEle){
+        let ele = document.getElementById(eleId);
+        if(ele.getAttribute("type") == "text"){
+            ele.setAttribute("type","password");
+            curEle.innerHTML = `<ion-icon name="eye-outline"></ion-icon>` ; 
+
+        }
+        else{
+            ele.setAttribute("type","text");
+            curEle.innerHTML = `<ion-icon name="eye-off-outline"></ion-icon>`;
+        }
+        
+    }
+    </script>
+</body>
+</html>

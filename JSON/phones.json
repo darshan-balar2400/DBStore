@@ -1,0 +1,302 @@
+[
+    {
+        "id":0,
+        "brandName":"Samsung",
+        "productName":"Galaxy S21 FE 5G",
+        "offer":50,
+        "colorNames":["gray","dark"],
+        "colorImages":{
+            "0":[
+                "images/samsung/samsung_s21_fe_5g/samsung_s21_fe_5g_gray.jpg",
+                "images/samsung/samsung_s21_fe_5g/samsung_s21_fe_5g_dark.png"
+                ],
+            "1":[
+                "images/samsung/samsung_s21_fe_5g/samsung_s21_fe_5g_dark.png"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"246GB",
+        "ram":[8,6],
+        "prices":[40999,39999],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.29cm (6.4) Dynamic AMOLED 2X(2340 x 1080)",
+        "Battery":"4,500mAh(typical)",
+        "defaultProductImage":"images/samsung/samsung_s21_fe_5g/samsung_s21_fe_5g_gray.jpg",
+        "brandImage":"images/samsungBrand2.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"4,500mAh | 120Hz Refresh Rate",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+   {
+        "id":1,
+        "brandName":"MI",
+        "productName":"Redmi Note 10s",
+        "offer":30,
+        "colorNames":["gray","dark"],
+        "colorImages":{
+                "0":[
+                    "images/redmi/redmi_note_10s/redmi_note_10s_blue_1.png",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_blue_2.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_blue_3.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_blue_4.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_blue_5.jpeg"
+                ],
+                "1":[
+                    "images/redmi/redmi_note_10s/redmi_note_10s_purple_1.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_purple_2.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_purple_3.jpeg",
+                    "images/redmi/redmi_note_10s/redmi_note_10s_purple_4.jpeg"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,6],
+        "prices":[18999,14999],
+        "camera":"64MP + 8MP + 2MP + 2MP | 13MP Front Camera",
+        "weight":"178.8g",
+        "screenSize":"16.33 cm (6.43 inch) Full HD+ Display",
+        "Battery":"5000 mAh Lithium-Ploymer Battery",
+        "defaultProductImage":"images/redmi/redmi_note_10s/redmi_note_10s_blue_1.png",
+        "brandImage":"images/miBrand.png",
+        "refreshRate":"120HZ",
+        "bestFeature":"5000 mAh Lithium-Ploymer Battery",
+        "OS":"Android 11",
+        "simType":"Dul SIM"
+    },
+    {
+        "id":2,
+        "brandName":"Oppo",
+        "productName":"Oppo F17 Pro ++ ",
+        "offer":10,
+        "colorNames":["gray","dark"],
+        "colorImages":{
+                "0":[
+                    "images/oppo/oppo_f17_pro/blue/1.jpeg",
+                    "images/oppo/oppo_f17_pro/blue/2.jpeg",
+                    "images/oppo/oppo_f17_pro/blue/3.jpeg",
+                    "images/oppo/oppo_f17_pro/blue/4.jpeg",
+                    "images/oppo/oppo_f17_pro/blue/5.jpeg",
+                    "images/oppo/oppo_f17_pro/blue/6.jpeg"
+                   
+                ],
+                "1":[
+                    "images/oppo/oppo_f17_pro/black/1.jpeg",
+                    "images/oppo/oppo_f17_pro/black/2.jpeg",
+                    "images/oppo/oppo_f17_pro/black/3.jpeg",
+                    "images/oppo/oppo_f17_pro/black/4.jpeg"
+                ]
+        },
+        "memory":[128],
+        "expandableStorage":"246GB",
+        "ram":[8],
+        "prices":[17999],
+        "camera":"48MP + 8MP + 2MP + 2MP | 16MP + 2MP Dual Front Camera",
+        "weight":"177g",
+        "screenSize":"16.33 cm (6.43 inch) Full HD+ Display",
+        "Battery":"4015 mAh Lithium-ion Battery",
+        "defaultProductImage":"images/oppo/oppo_f17_pro/blue/0.jpg",
+        "brandImage":"images/oppo.png",
+        "refreshRate":"120HZ",
+        "bestFeature":"30W VOOC Flash Charge 4.0",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+    {
+        "id":3,
+        "brandName":"RealMe",
+        "productName":"Realme Narzo 50A",
+        "offer":10,
+        "colorNames":["gray","dark"],
+        "colorImages":{
+                "0":[
+                    "images/realme/realme_narzo/blue/1.jpeg",
+                    "images/realme/realme_narzo/blue/2.jpeg",
+                    "images/realme/realme_narzo/blue/3.jpeg",
+                    "images/realme/realme_narzo/blue/4.jpeg",
+                    "images/realme/realme_narzo/blue/5.jpeg",
+                    "images/realme/realme_narzo/blue/6.jpeg"
+                   
+                ],
+                "1":[
+                   "images/realme/realme_narzo/green/1.jpeg",
+                   "images/realme/realme_narzo/green/2.jpeg",
+                   "images/realme/realme_narzo/green/3.jpeg",
+                   "images/realme/realme_narzo/green/4.jpeg",
+                   "images/realme/realme_narzo/green/5.jpeg",
+                   "images/realme/realme_narzo/green/6.jpeg"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"246GB",
+        "ram":[8,4],
+        "prices":[13999,10999],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"6000 mAh Battery",
+        "defaultProductImage":"images/realme/realme_narzo/blue/0.png",
+        "brandImage":"images/realme.png",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+    {
+        "id":4,
+        "brandName":"Apple",
+        "productName":"Iphone 13 Pro",
+        "offer":10,
+        "colorNames":["LightBlue"],
+        "colorImages":{
+                "0":[
+                        "images/Iphone/Iphone 13 Pro/iphone1.jpg",
+                        "images/Iphone/Iphone 13 Pro/iphone2.jpg",
+                        "images/Iphone/Iphone 13 Pro/iphon3.jpg",
+                        "images/Iphone/Iphone 13 Pro/iphone4.jpg",
+                        "images/Iphone/Iphone 13 Pro/iphone5.jpg",
+                        "images/Iphone/Iphone 13 Pro/iphone6.jpg"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,4],
+        "prices":[139999,129999],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"2000 mAh Battery",
+        "defaultProductImage":"images/Iphone/Iphone 13 Pro/iphone1.jpg",
+        "brandImage":"images/appleBrand.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"IOS",
+        "simType":"Dul SIM"
+    },
+    {
+        "id":5,
+        "brandName":"OnePlus",
+        "productName":"OnePlus 9R LakeBlue",
+        "offer":30,
+        "colorNames":["LakeBlue"],
+        "colorImages":{
+                "0":[
+                        "images/oneplus/onePlus 9R/1.jpg",
+                        "images/oneplus/onePlus 9R/2.jpg",
+                        "images/oneplus/onePlus 9R/3.jpg",
+                        "images/oneplus/onePlus 9R/4.jpg",
+                        "images/oneplus/onePlus 9R/5.jpg"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,4],
+        "prices":[40000,30000],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"6000 mAh Battery",
+        "defaultProductImage":"images/oneplus/onePlus 9R/1.jpg",
+        "brandImage":"images/onePlus.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+     {
+        "id":6,
+        "brandName":"OnePlus",
+        "productName":"OnePlus Nord Blue Void",
+        "offer":20,
+        "colorNames":["BlueVoid"],
+        "colorImages":{
+                "0":[
+                        "images/oneplus/onePlus Nord/1.jpg",
+                        "images/oneplus/onePlus Nord/2.jpg",
+                        "images/oneplus/onePlus Nord/3.jpg",
+                        "images/oneplus/onePlus Nord/4.jpg",
+                        "images/oneplus/onePlus Nord/5.jpg"
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,4],
+        "prices":[24000,18000],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"6000 mAh Battery",
+        "defaultProductImage":"images/oneplus/onePlus Nord/1.jpg",
+        "brandImage":"images/onePlus.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+     {
+        "id":7,
+        "brandName":"Vivo",
+        "productName":"Vivo Y72 5G",
+        "offer":50,
+        "colorNames":["Slate Gray"],
+        "colorImages":{
+                "0":[
+                        "images/vivo/vivo y72/1.png",
+                        "images/vivo/vivo y72/2.jpg",
+                        "images/vivo/vivo y72/3.jpg",
+                        "images/vivo/vivo y72/4.jpg",
+                        "images/vivo/vivo y72/5.jpg",
+                        "images/vivo/vivo y72/6.jpg"
+                       
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,4],
+        "prices":[20000,18000],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"4000 mAh Battery",
+        "defaultProductImage":"images/vivo/vivo y72/1.png",
+        "brandImage":"images/vivo2.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    },
+    {
+        "id":8,
+        "brandName":"Samsung",
+        "productName":"Samsung Galaxy S20 FE",
+        "offer":0,
+        "colorNames":["Cloud Ming"],
+        "colorImages":{
+                "0":[
+                        "images/samsung/samsung s20/1.jpg",
+                        "images/samsung/samsung s20/2.jpg",
+                        "images/samsung/samsung s20/3.jpg",
+                        "images/samsung/samsung s20/4.jpg",
+                        "images/samsung/samsung s20/5.jpg"
+                       
+                       
+                ]
+        },
+        "memory":[128,64],
+        "expandableStorage":"512GB",
+        "ram":[8,4],
+        "prices":[35000,32000],
+        "camera":"50MP + 2MP + 2MP | 8MP Front Camera",
+        "weight":"177g",
+        "screenSize":"16.51 cm (6.5 inch) HD+ Display",
+        "Battery":"7000 mAh Battery",
+        "defaultProductImage":"images/samsung/samsung s20/1.jpg",
+        "brandImage":"images/samsungBrand2.jpg",
+        "refreshRate":"120HZ",
+        "bestFeature":"MediaTek Helio G85 Processor",
+        "OS":"Android",
+        "simType":"Dul SIM"
+    }
+    
+]

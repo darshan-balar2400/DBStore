@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>darshan balar</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- bootstrap link -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery file  -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/productJs2.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        footer .footer_container{
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+	 <header class="container-fluid" id="header_container">
+        <div class="content container ">
+            
+           
+          
+            <div class="brand_image">
+                <img width="30" height="35" src="../images/logo1.jpg">
+            </div>
+            <div class="brand_name">
+                <span style="color:rgb(50,198,113);">DB</span>Store
+            </div>
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="otherPages/AllProducts.html">Products</a>
+                <a href="#contactUs">Contact Us</a>
+                <a href="#ourapp">Our App</a>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search"  data-toggle="dropdown" class="dropdown" autocomplete="off" onkeyup="displayDropDown();">
+                
+                <button class="searchBtn" onclick="Search();"><ion-icon name="search"></ion-icon></button>
+                <div class="dropdown-menu" id="dropdownSearch" style="display: none;">
+                    <!-- <div class="dropdown-item">
+                       <a href="#"></a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="likeAndCartButton">
+                <button class="likeBtn"><ion-icon name="heart-outline"></ion-icon></button>
+                <button class="cartBtn"><ion-icon name="cart"></ion-icon></button>
+               <a href="login.html"><button class="loginButton"><ion-icon name="log-in-outline"></ion-icon></button></a>
+            </div>
+
+           <a href="otherPages/login.html"> <button class="loginbtn">Login</button></a>
+             <div class="menu_icon ">
+                <button id="menuButton" onclick="ShowMenu();"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <!-- when website is open in the mobile -->
+        <div class="mobile_navbar" id="mobile_navbar">
+                <div class="navbar">
+                    <!-- login button -->
+                    <button onclick="CloseMenu();"><ion-icon name="close-outline"></ion-icon></button>
+                    <ul>
+                         <li><a href="../index.html">Home</a></li>
+                        <li><a href="AllProducts.html">Products</a></li>
+                        <li><a href="#contactUs" onclick="CloseMenu()">Contact Us</a></li>
+                        <li><a href="#ourapp" onclick="CloseMenu()">Our App</a></li>
+                        <li><a href="AllLatestProducts.html">Latest Products</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <!-- <h5>Follow Us On</h5> -->
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                       
+                    </div>
+                </div>
+        </div>
+    </header>
+    <section>	
+        <div class="loading_container" id="loading">
+                    <div class="dot_container">
+                        <div class="circle"><div class="circle_draw"></div></div>
+                        <div class="circle"><div class="circle_draw"></div></div>
+                        <div class="circle"><div class="circle_draw"></div></div>
+                        <div class="circle"><div class="circle_draw"></div></div>
+                        <div class="circle"><div class="circle_draw"></div></div>
+                    </div>
+        </div>
+    	<div class="container-fluid productBody">
+    		<div class="content" id="content">
+    			<div class="leftSide">
+                    <div class="allImg">
+                        <div class="images" id="allImages">
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="img" id="mainImage">
+                    </div>
+                </div>
+                <div class="rightSide" id="rightSide">
+                    <div class="title">
+                        <h4 id="productName"></h4>
+                    </div>
+                    <div class="body">
+                        <p id="memoryText"></p>
+                        <p id="offer"></p>
+                        <p><del id="orignalPrice"></del></p>
+                        <h4 class="price" id="price"></h4>
+
+                        <div class="buttons" id="cartAndBuyButtons">
+                            
+                        </div>
+
+                        <div class="information" id="information">
+                            <div class="row" id="cs">
+                                <div class="col-sm-2">
+                                    Color
+                                </div>
+                                <div class="col-sm-4 images " id="colorImages">
+                                </div>
+                                <div class="col-sm-2">
+                                    Storage
+                                </div>
+                                <div class="col-sm-4 " id="memorys">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    Ram
+                                </div>
+                                <div class="col-sm-5" id="rams">
+                                   
+                                </div>
+                            </div>
+                           
+                           <!--  <div class="row">
+                                <div class="col-sm-2 ">
+                                    Description
+                                </div>
+                                <div class="col-sm-8">
+                                    <li>2 GB RAM | 32 GB ROM | Expandable Upto 256 GB</li>
+                                    <li>8MP Rear Camera | 5MP Front Camera</li>
+                                    <li>${battery}</li>
+                                    <li>${screenSize}</li>
+                                    <li>Octa-core Processor</li>
+                                </div>
+                                
+                            </div> -->
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+    		</div>
+    	</div>
+        <!-- buy now form -->
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class=" footer_container">
+            <div class="boxes">
+                <div class="box">
+                    <h5>Menu</h5>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Products</li></a>
+                    <a href="#"><li>Brands</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </div>
+                <div class="box">
+                    <h5>Services</h5>
+                    <a href="#"><li>FulFillMent Services</li></a>
+                    <a href="#"><li>Partner Services</li></a>
+                    <a href="#"><li>Packaging Services</li></a>
+                    <a href="#"><li>Account Management </li></a>
+                    
+                </div>
+                <div class="box" id="contactUs">
+                    <h5>Contact Us</h5>
+                    <a href="#"><li>balardarshan40@gmail.com</li></a>
+                    <a href="#"><li>+91 98767 56756</li></a>
+                    <a href="#"><li>+91 59395 24929</li></a>
+                    
+                </div>
+                <div class="box">
+                    <h5>Our App</h5>
+                    <a href="#"><img src="../images/playStore.png" width="110" height="35"></a><br>
+                    <a href="#"><img src="../images/appleStore.png" class="mt-2"  width="110" height="35"></a>
+                   
+                </div>
+                <div class="box" id="followUsOn">
+                    <h5>Follow Us On</h5>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                   
+                </div>
+            </div>
+            <div class="copyright">
+                <h6>@2022 DBStore All Rights Reserved</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

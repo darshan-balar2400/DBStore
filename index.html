@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- bootstrap link -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery file  and js files -->
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- other files -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title> DB Store</title>
+
+    <style>
+        #loadingbrand,#loadingphones{
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header class="container-fluid" id = "header_container">
+        <div class="content container ">
+            <div class="brand_image">
+                <a href="index.html"><img width="30" height="35" src="images/logo1.jpg"></a>
+            </div>
+            <div class="brand_name">
+                <span style="color:rgb(50,198,113);">DB</span>Store
+            </div>
+            <div class="links">
+                <a href="index.html" style="color:rgb(58,198,113);">Home</a>
+                <a href="otherPages/AllProducts.html">Products</a>
+                <a href="#contactUs">Contact Us</a>
+                <a href="#ourapp">Our App</a>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search"  data-toggle="dropdown" class="dropdown" autocomplete="off" onkeyup="displayDropDown();">
+                
+                <button class="searchBtn" onclick="Search();"><ion-icon name="search"></ion-icon></button>
+                <div class="dropdown-menu" id="dropdownSearch" style="display: none;">
+                    <!-- <div class="dropdown-item">
+                       <a href="#"></a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="likeAndCartButton">
+                <button class="likeBtn"><ion-icon name="heart-outline"></ion-icon></button>
+                <button class="cartBtn"><ion-icon name="cart"></ion-icon></button>
+                <a href="otherPages/login.html"><button class="loginButton"><ion-icon name="log-in-outline"></ion-icon></button></a>
+            </div>
+
+           <a href="otherPages/login.html"> <button class="loginbtn">Login</button></a>
+             <div class="menu_icon ">
+                <button id="menuButton" onclick="ShowMenu();"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <!-- when website is open in the mobile -->
+        <div class="mobile_navbar" id="mobile_navbar">
+                <div class="navbar">
+                    <!-- login button -->
+                    <button onclick="CloseMenu();"><ion-icon name="close-outline"></ion-icon></button>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="otherPages/AllProducts.html">Products</a></li>
+                        <li><a href="#contactUs" onclick="CloseMenu()">Contact Us</a></li>
+                        <li><a href="#ourapp" onclick="CloseMenu()">Our App</a></li>
+                        <li><a href="otherPages/AllLatestProducts.html">Latest Products</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <!-- <h5>Follow Us On</h5> -->
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                       
+                    </div>
+                </div>
+        </div>
+    </header>
+<!-- body -->
+    <section>
+        <!-- img -->
+       
+        <div class="container-fluid body ">
+           <div class="content">
+            <!-- img -->
+               <div class="imgWithContent d-flex align-items-center ">
+                  <div class="imgContent">
+                        <div class="title">
+                            <h2>Order Your Dream Smart Phone</h2>
+                            <h5 class="freeDelivery">#Free Delivery</h5>
+                        </div>
+                        <div class="body">
+                            <a href="otherPages/SignUp.html"><button class="signUp">SignUp</button></a>
+                        </div>
+                  </div>
+               </div>
+               <!-- our latest products -->
+               <div class="container-fluid latesProductContainer box">
+                
+                    <div class="title">
+                        <h5>Our Latest Products</h5>
+                        <span style="float:right;cursor:pointer;"><a href="otherPages/AllLatestProducts.html" target="_self" style="text-decoration: none;color:gray">View All</a></span>
+                    </div>
+                    <div class="body items" id="items">
+                        <div class="loading_container" id="loadingphones">
+                            <div class="dot_container">
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <!-- ad image -->
+
+               <!-- shop by brands -->
+               <div class="container-fluid brandContainer box" id="shopBybrands">
+                    
+                    <div class="title">
+                        <h5>Shop By Brand</h5>
+                        <span style="float:right;cursor:pointer;"></span>
+                    </div>
+
+                    <div class="body brands" id="brands">
+                        <div class="loading_container" id="loadingbrand">
+                            <div class="dot_container">
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                                <div class="circle"><div class="circle_draw"></div></div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            
+               <!-- shop by price -->
+                <!-- shop by brands -->
+               <div class="container-fluid brandContainer box mb-5">
+
+                    <div class="title">
+                        <h5>Shop By Price</h5>
+                        <span style="float:right;cursor:pointer;"></span>
+                    </div>
+                    <div class="body price" id="price">
+                        <div class="price_container">
+                            <div class="price"  onclick="filterByPrice(0,10000);">
+                                <img src="images/shopbyprice/below_10000.jpg">
+                            </div>
+                            <div class="price"  onclick="filterByPrice(10000,15000);">
+                                 <img src="images/shopbyprice/10to15.jpg">
+                            </div>
+                            <div class="price"  onclick="filterByPrice(15000,20000);">
+                                <img src="images/shopbyprice/15to20.jpg">
+                            </div>
+                            <div class="price" onclick="filterByPrice(20000,30000);">
+                                <img src="images/shopbyprice/20to30.jpg">
+                            </div>
+                             <div class="price"  onclick="filterByPrice(30000,40000);">
+                                <img src="images/shopbyprice/30to40.jpg">
+                            </div>
+                            <div class="price"  onclick="filterByPrice(40000,10000000);">
+                                <img src="images/shopbyprice/above_40000.jpg">
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footer_container">
+            <div class="boxes">
+                <div class="box">
+                    <h5>Menu</h5>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Products</li></a>
+                    <a href="#"><li>Brands</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </div>
+                <div class="box">
+                    <h5>Services</h5>
+                    <a href="#"><li>FulFillMent Services</li></a>
+                    <a href="#"><li>Partner Services</li></a>
+                    <a href="#"><li>Packaging Services</li></a>
+                    <a href="#"><li>Account Management </li></a>
+                    
+                </div>
+                <div class="box" id="contactUs">
+                    <h5>Contact Us</h5>
+                    <a href="#"><li>balardarshan40@gmail.com</li></a>
+                    <a href="#"><li>+91 98767 56756</li></a>
+                    <a href="#"><li>+91 59395 24929</li></a>
+                    
+                </div>
+                <div class="box" id="ourapp">
+                    <h5>Our App</h5>
+                    <a href="#"><img src="images/playStore.png" width="110" height="35"></a><br>
+                    <a href="#"><img src="images/appleStore.png" class="mt-2"  width="110" height="35"></a>
+                   
+                </div>
+                <div class="box" id="followUsOn">
+                    <h5>Follow Us On</h5>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                   
+                </div>
+            </div>
+            <div class="copyright">
+                <h6>@2022 DBStore All Rights Reserved</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
